@@ -1,0 +1,34 @@
+# MATLAB generated files
+*.asv
+*.autosave
+*.m~
+*.mex*
+*.fig
+*.mlx.autosave
+slprj/
+codegen/
+
+# Large experiment artifacts
+*.mat
+*.xlsx
+platemo/Data/
+Data/
+result/
+results/raw/
+
+# Keep the small deterministic path-cost scene definition
+!results/path_cost/ScenPos.mat
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# LaTeX and temporary outputs
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.tmp
+*.bak

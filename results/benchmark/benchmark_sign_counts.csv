@@ -1,0 +1,16 @@
+Group,Competitor,BetterThanDE2,WorseThanDE2,NoDifference,NotAvailable
+Low-to-medium,L2SMEA,0,24,0,0
+Low-to-medium,SADEAMSS,3,19,2,0
+Low-to-medium,SAMSO,0,24,0,0
+Low-to-medium,GORS-SSLPSO,3,18,3,0
+Low-to-medium,SHPSO,6,15,3,0
+High,L2SMEA,0,8,0,16
+High,SADEAMSS,2,21,1,0
+High,SAMSO,0,8,0,16
+High,GORS-SSLPSO,3,18,3,0
+High,SHPSO,6,16,2,0
+All,L2SMEA,0,32,0,16
+All,SADEAMSS,5,40,3,0
+All,SAMSO,0,32,0,16
+All,GORS-SSLPSO,6,36,6,0
+All,SHPSO,12,31,5,0

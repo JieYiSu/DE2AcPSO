@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying DE2AcPSO manuscript and PlatEMO."
+title: "DE2AcPSO: MATLAB code and experiments"
+type: software
+version: 1.0.0
+date-released: 2026-08-08
+license: MIT
+authors:
+  - family-names: Luo
+    given-names: Cheng-Li
+  - family-names: Su
+    given-names: Jie-Yi
+  - family-names: Liu
+    given-names: Min
+  - family-names: Zhong
+    given-names: Chen
+  - family-names: Peng
+    given-names: Yun-Feng
+  - family-names: Chu
+    given-names: Shu-Chuan
+  - family-names: Pan
+    given-names: Jeng-Shyang
+abstract: >-
+  Official MATLAB and PlatEMO-compatible implementation of dual-engine
+  enhanced adaptive compact particle swarm optimization for
+  evaluation-limited high-dimensional expensive optimization.
+keywords:
+  - surrogate-assisted evolutionary algorithm
+  - compact particle swarm optimization
+  - expensive optimization
+  - MATLAB
+  - PlatEMO
