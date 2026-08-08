@@ -1,8 +1,6 @@
 # DE2AcPSO
 
-Official MATLAB code accompanying the manuscript **"A dual-engine enhanced
-adaptive compact particle swarm optimization for high-dimensional expensive
-optimization with an evaluation-limited synthetic path-cost study."**
+Official MATLAB code accompanying the manuscript **"A Dual-Engine Compact Particle Swarm Optimization for High-Dimensional Expensive Optimization"**
 
 DE2AcPSO alternates a fit-gated restricted-quadratic local engine and an
 archive-reconstructed compact global engine with RBF screening. This
