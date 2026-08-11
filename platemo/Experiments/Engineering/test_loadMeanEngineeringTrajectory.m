@@ -6,7 +6,7 @@ end
 function testReturnsPointwiseMeanOfTwentyDecodedFinalRoutes(testCase)
 fixtureDir = tempname;
 mkdir(fixtureDir);
-cleaner = onCleanup(@()rmdir(fixtureDir,'s')); %#ok<NASGU>
+cleaner = onCleanup(@()rmdir(fixtureDir,'s'));
 startPos = [-80 -80];
 endPos = [80 80];
 numSamples = 41;
@@ -15,7 +15,7 @@ expectedY = zeros(20,numSamples);
 
 for run = 1:20
     dec = [-40, -30+run/2, 10, 20-run/4];
-    result = {1000,struct('decs',dec,'objs',run)}; %#ok<NASGU>
+    result = {1000,struct('decs',dec,'objs',run)};
     save(fullfile(fixtureDir,sprintf('ALG_Scen1_Run%d.mat',run)),'result');
     [expectedX(run,:),expectedY(run,:)] = ...
         RobotPathPlanning.DecodeTrajectory(dec,startPos,endPos,numSamples);
