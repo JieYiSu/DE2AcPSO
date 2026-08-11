@@ -32,11 +32,11 @@ for i = 1:numel(entries)
         mkdir(destinationFolder);
     end
     if exist(destinationFile,'file') == 2 && ~overwriteExisting
-        skipped(end+1,1) = string(relativePath); %#ok<AGROW>
+        skipped(end+1,1) = string(relativePath);
         continue;
     end
     copyfile(sourceFile,destinationFile,'f');
-    installed(end+1,1) = string(relativePath); %#ok<AGROW>
+    installed(end+1,1) = string(relativePath);
 end
 
 addpath(genpath(platemoRoot));
