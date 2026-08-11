@@ -4,7 +4,7 @@ removeSvgAfterExport = nargin < 3 || isempty(svgFile);
 if removeSvgAfterExport
     svgFile = [tempname '.svg'];
 end
-svgCleanup = onCleanup(@() cleanIntermediateSvg(svgFile,removeSvgAfterExport)); %#ok<NASGU>
+svgCleanup = onCleanup(@() cleanIntermediateSvg(svgFile,removeSvgAfterExport));
 
 exportgraphics(fig,svgFile,'ContentType','vector');
 svgText = fileread(svgFile);
@@ -20,7 +20,7 @@ svgText = regexprep(svgText,'^\s*<\?xml[^>]*\?>\s*','');
 htmlFile = [tempname '.html'];
 profileDir = tempname;
 mkdir(profileDir);
-cleanup = onCleanup(@() cleanTemporaryFiles(htmlFile,profileDir)); %#ok<NASGU>
+cleanup = onCleanup(@() cleanTemporaryFiles(htmlFile,profileDir));
 
 htmlText = sprintf([ ...
     '<!doctype html><html><head><meta charset="utf-8">' ...
