@@ -80,7 +80,7 @@ for factorIndex = 1:numel(factorNames)
         values(factorIndex) = levels(levelIndex);
         configRows(end+1,:) = {factorNames{factorIndex}, ...
         factorSymbols{factorIndex}, levels(levelIndex), ...
-            factorIndex, values(1), values(2), values(3), values(4)}; %#ok<AGROW>
+            factorIndex, values(1), values(2), values(3), values(4)};
     end
 end
 
