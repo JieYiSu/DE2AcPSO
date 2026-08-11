@@ -47,7 +47,7 @@ function name = excelColumnName(column)
 name = '';
 while column > 0
     remainder = mod(column-1,26);
-    name = [char(double('A')+remainder),name]; %#ok<AGROW>
+    name = [char(double('A')+remainder),name];
     column = floor((column-1)/26);
 end
 end
