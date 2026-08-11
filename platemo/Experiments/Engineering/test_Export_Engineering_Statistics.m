@@ -8,7 +8,7 @@ fixtureDir = tempname;
 outputDir = tempname;
 mkdir(fixtureDir);
 mkdir(outputDir);
-cleaner = onCleanup(@()cleanupFixture(fixtureDir,outputDir)); %#ok<NASGU>
+cleaner = onCleanup(@()cleanupFixture(fixtureDir,outputDir));
 
 algorithms = {'COMP','DE2AcPSO'};
 for scenario = 1:2
@@ -22,13 +22,13 @@ for scenario = 1:2
         end
         result = {[10], struct('objs',run + competitorOffset); ...
             [50], struct('objs',run/2 + competitorOffset); ...
-            [100], struct('objs',run/4 + competitorOffset)}; %#ok<NASGU>
+            [100], struct('objs',run/4 + competitorOffset)};
         save(fullfile(fixtureDir,sprintf('COMP_Scen%d_Run%d.mat', ...
             scenario,run)),'result');
 
         result = {[10], struct('objs',run + baselineOffset); ...
             [50], struct('objs',run/2 + baselineOffset); ...
-            [100], struct('objs',run/4 + baselineOffset)}; %#ok<NASGU>
+            [100], struct('objs',run/4 + baselineOffset)};
         save(fullfile(fixtureDir,sprintf('DE2AcPSO_Scen%d_Run%d.mat', ...
             scenario,run)),'result');
     end
@@ -155,7 +155,7 @@ function name = excelColumnName(column)
 name = '';
 while column > 0
     remainder = mod(column-1,26);
-    name = [char(double('A')+remainder),name]; %#ok<AGROW>
+    name = [char(double('A')+remainder),name];
     column = floor((column-1)/26);
 end
 end
