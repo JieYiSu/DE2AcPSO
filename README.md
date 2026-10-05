@@ -123,6 +123,6 @@ using this implementation should also acknowledge and cite PlatEMO:
 
 ## License
 
-The DE2AcPSO files in this repository are released under the MIT License.
+The DE2AcPSO files in this repository are released under the Apache License 2.0.
 PlatEMO and all third-party comparison implementations remain subject to
 their respective terms.
